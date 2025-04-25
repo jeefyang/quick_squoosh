@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>文件夹上传</title>
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <div class="top">
+            <div id="dropZone">拖拽文件夹到这里</div>
+            <div id="terminal"></div>
+        </div>
+        <textarea id="input" placeholder="例子:'jpg,jpg;png->webp',意思为jpg->jpg,png->webp"></textarea>
+        <div class="progress-container">
+            <button id="downloadBtn" disabled>下载ZIP包</button>
+        </div>
+        <div id="progressContainer"></div>
+        <script src="./main.js"></script>
+    </body>
+</html>

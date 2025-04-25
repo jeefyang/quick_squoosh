@@ -1,0 +1,12 @@
+version: "3.8"
+
+services:
+    app:
+        build: .
+        ports:
+            - "9091:7090"
+        environment:
+            - NODE_ENV=development
+        volumes:
+            - ./:/app # 挂载本地代码
+            - /app/node_modules # 避免覆盖容器内的node_modules
